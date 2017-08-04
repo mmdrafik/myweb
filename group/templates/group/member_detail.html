@@ -1,0 +1,8 @@
+{% extends 'group/index.html' %}
+
+{% block content %}
+    <div class="member">
+        <a class="btn btn-default" href="{% url 'member_edit' member_id=member.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <h3>{{ member.member_name }}</h3>
+    </div>
+{% endblock %}
